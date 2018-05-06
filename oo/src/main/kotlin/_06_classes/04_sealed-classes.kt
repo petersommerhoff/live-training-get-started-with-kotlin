@@ -16,7 +16,7 @@ fun sumOf(tree: BinaryTree): Int = when (tree) {
   is Leaf -> tree.value
 }
 
-// (3) Either type
+// (3) Either type (generics later)
 sealed class Either<L, R> {
   data class Left<L>(val left: L) : Either<L, Nothing>()
   data class Right<R>(val right: R) : Either<Nothing, R>()
