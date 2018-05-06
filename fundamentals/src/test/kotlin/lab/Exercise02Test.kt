@@ -6,9 +6,10 @@ package lab
 
 // Solve exercise02.kt to make these tests compile and pass
 
-/*
+
 class Exercise02Test {
 
+  /*
   private val fourthAdvent = LocalDate.parse("2018-12-23")
   private val christmasEve = LocalDate.parse("2018-12-24")
   private val christmasDay = LocalDate.parse("2018-12-25")
@@ -42,5 +43,5 @@ class Exercise02Test {
     assertFalse(christmasEve in empty, "DateRange should be empty")
     assertFalse(christmasDay in empty, "DateRange should be empty")
   }
+  */
 }
-*/
