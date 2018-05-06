@@ -12,6 +12,7 @@ fun main(args: Array<String>) {
       Employee("Martin Fowler", 175_000)
   )
 
+  // (1) sortedBy accepts lambda that defines sort key
   val byName = developers.sortedBy { it.name }
   val bySalary = developers.sortedBy { it.yearlySalary }
   val bySalaryDesc = developers.sortedByDescending { it.yearlySalary }

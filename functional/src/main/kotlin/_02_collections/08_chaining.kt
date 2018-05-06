@@ -9,7 +9,7 @@ fun main(args: Array<String>) {
       User("johnnyboy", 17, false),
       User("susy", 35, true),
       User("katyyy", 42, true),
-      User("gunther", 70, true)
+      User("fr33rid3r", 70, true)
   )
 
   // (1) Chaining higher-order functions
