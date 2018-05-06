@@ -19,6 +19,6 @@ fun main(args: Array<String>) {
   // (3) ClassCastException
   val wrong = (anything as Long)
 
-  // (3) Sidenote: don't do this (see type)
+  // Note : don't do this (see type)
   val init = null
 }

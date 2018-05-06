@@ -5,7 +5,7 @@ package _02_types
  */
 fun main(args: Array<String>) {
 
-  // 1) Read-only lists
+  // (1) Read-only lists
   val fixed = listOf(4, 8, 15, 16, 23, 42)
 //  numbers.add()
   println(fixed)
@@ -13,7 +13,7 @@ fun main(args: Array<String>) {
   val second = fixed[1]
   println(second)
 
-  // 2) Mutable lists
+  // (2) Mutable lists
   val numbers = mutableListOf(0, 1, 1, 2)
   numbers.add(3)
 

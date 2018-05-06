@@ -10,6 +10,7 @@ fun main(args: Array<String>) {
 
   balance -= toWithdraw
 
+  // (1) if is an expression
   val message = if (balance < 0) {
     // Do other stuff...
     "Warning! You're balance is now below zero: $balance"  // Note: string interpolation with $

@@ -9,7 +9,7 @@ public class JClass {
 
   public static void main(String[] args) {
 
-    // === Unchecked exceptions ===
+    // (1) Compiler doesn't complain unless Kotlin uses @Throws annotation
 //    Unchecked.require(2 == 3, "Mathematics is no longer...");
 
     Appendable html = new StringBuilder();
@@ -21,10 +21,10 @@ public class JClass {
     }
     System.out.println(html);
 
-    // === Nothing type ===
-    Void v = Nothing.fail("foo");  // (1) Return type Void
-    System.out.println(v);         // (2) Dead code (not recognizable)
+    // (2) Nothing type
+    Void v = Nothing.fail("foo");  // Note: Return type is Void
+    System.out.println(v);         // Note: dead code (not recognizable)
 
-    Void v2 = null;                // (3) Void is closest to Nothing type in Kotlin (same as `Nothing?`)
+    Void v2 = null;                // Note: Void is closest to Nothing type in Kotlin (same as `Nothing?`)
   }
 }

@@ -5,7 +5,7 @@ package _02_types
  */
 fun main(args: Array<String>) {
 
-  // 1) Read-only maps
+  // (1) Read-only maps
   val studentToGrade = mapOf(
       "Susan" to 3.8,
       "Marc" to 3.3,
@@ -13,7 +13,7 @@ fun main(args: Array<String>) {
   )
   println(studentToGrade)
 
-  // 2) Mutable maps
+  // (2) Mutable maps
   val owners = mutableMapOf(
       "Ferrari" to "Susan",
       "Porsche" to "Marc"

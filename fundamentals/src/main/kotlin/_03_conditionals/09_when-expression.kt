@@ -7,6 +7,7 @@ fun main(args: Array<String>) {
 
   val price = 9.99
 
+  // (1) when is also an expression
   val sale: String = when {
     price < 10.0 -> "Black Friday Sale"
     price == 14.99 -> "Yearly summer sale"

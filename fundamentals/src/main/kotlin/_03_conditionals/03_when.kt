@@ -7,7 +7,7 @@ fun main(args: Array<String>) {
 
   val level = "intermediate"
 
-  // Basically simplified if-statement in this case
+  // (1) Basically simplified if-statement in this case
   when (level) {
     "beginner" -> println("Suitable for beginners")
     "intermediate" -> println("You should have some experience")

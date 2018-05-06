@@ -9,7 +9,6 @@ fun main(args: Array<String>) {
 
   // 2) String provides an Iterable<Char>
   val word = "Kotlin"
-
   for (letter in word) {
     println("Give me a ${letter.toUpperCase()}!")  // Note: string interpolation with ${...}
   }

@@ -22,15 +22,16 @@ fun main(args: Array<String>) {
   println(str[0..14])
 
   // (4) Other operators
-  operator fun BigInteger.plus(other: BigInteger) = this.add(other)  // actually done in Kotlin stdlib
-  operator fun BigInteger.minus(other: BigInteger) = this.subtract(other)  // actually done in Kotlin stdlib
-  operator fun BigInteger.times(other: BigInteger) = this.multiply(other)  // actually done in Kotlin stdlib
-  operator fun BigInteger.div(other: BigInteger) = this.divide(other)  // actually done in Kotlin stdlib
-  // Note: all shown in autocomplete when using "operator" modifier
+  // Note: these actually exist in Kotlin's stdlib
+  // Note: all operators shown in autocomplete when using "operator" modifier
+  operator fun BigInteger.plus(other: BigInteger) = this.add(other)
+  operator fun BigInteger.minus(other: BigInteger) = this.subtract(other)
+  operator fun BigInteger.times(other: BigInteger) = this.multiply(other)
+  operator fun BigInteger.div(other: BigInteger) = this.divide(other)
 
-  val x = BigInteger.valueOf(Long.MAX_VALUE)
-  x.add(BigInteger.valueOf(Int.MAX_VALUE.toLong()))  // Note: explicit cast necessary (strict type system)
-  x.add(BigInteger.ONE)
-  println(x)
+  val x = BigInteger.valueOf(12)
+  val y = x + BigInteger.valueOf(29)  // Note: explicit cast to Long necessary (strict)
+  val z = y + BigInteger.ONE
+  println(z)
 }
 

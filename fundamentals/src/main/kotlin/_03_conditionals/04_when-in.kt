@@ -7,6 +7,7 @@ fun main(args: Array<String>) {
 
   val age = 19
 
+  // (1) Use `in` to check for ranges
   when (age) {
     in 0..17 -> println("You're not allowed to")
     in 18..20 -> println("You may be allowed to")
@@ -14,7 +15,7 @@ fun main(args: Array<String>) {
     else -> println("That's not a valid age")
   }
 
-  // Sidenote: a..b are ranges
+  // Note: a..b are ranges
   val range: IntRange = 1..10
   println(range)
   println(range.toList())

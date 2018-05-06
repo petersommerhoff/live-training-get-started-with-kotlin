@@ -5,7 +5,9 @@ package _02_types
  */
 fun main(args: Array<String>) {
 
-  val b: Byte = 4       // 128 => compile-time error
+  // (1) Same basic types as in Java
+  // Note: notice which explicit types are redundant
+  val b: Byte = 4       // Note: try to assign 128
   val s: Short = 8
   val i: Int = 15
   val l: Long = 16L

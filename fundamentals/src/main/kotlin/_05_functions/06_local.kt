@@ -7,12 +7,15 @@ fun main(args: Array<String>) {
 
   var localVariable = 0
 
-  // 1) Can define functions inside functions; can access closure (local variable of parent scope)
+  // (1) Can define functions inside functions; can access closure (local variable of parent scope)
   fun local() {
     localVariable++
+
+    // (2) Could nest arbitrarily
+    fun foo() {}
   }
 
-  // 2) Local functions must be defined before use
+  // (3) Local functions must be defined before use
   local()
 
   // Note: useful for local helper functions with minimal scope

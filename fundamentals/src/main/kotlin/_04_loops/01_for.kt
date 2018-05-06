@@ -14,7 +14,7 @@ fun main(args: Array<String>) {
   )
 
   // 1) For-loop is a little different, no ";; syntax"
-
+  // Note: works with anything that provides an iterator()
   for (entry in personToRole) {
     val name = entry.key
     val role = entry.value
@@ -23,7 +23,7 @@ fun main(args: Array<String>) {
 
   println("-----")
 
-  // 2) Better solution to iterate over maps
+  // 2) Idiomatic solution to iterate over maps
   for ((name, role) in personToRole) {
     println("$name is the $role in The Simpsons")
   }

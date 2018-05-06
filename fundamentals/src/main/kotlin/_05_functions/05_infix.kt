@@ -21,6 +21,6 @@ fun main(args: Array<String>) {
   val myPair = "McLaren" onto "Lucas"
   println(myPair)
 
-  // (4) Note: Works same way for member methods
+  // (4) Note: Works same way for member methods (OO later)
 }
 

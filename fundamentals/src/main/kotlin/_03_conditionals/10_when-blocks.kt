@@ -5,8 +5,9 @@ package _03_conditionals
  */
 fun main(args: Array<String>) {
 
-  val mood = "PRODUCTIVE"  // Better: enum class
+  val mood = "PRODUCTIVE"  // Note: enum class later
 
+  // (1) RHS can be a block
   when (mood) {
     "PRODUCTIVE" -> {
       println("Work work work...")

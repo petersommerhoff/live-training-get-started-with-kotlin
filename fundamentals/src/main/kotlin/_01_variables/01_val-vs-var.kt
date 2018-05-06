@@ -5,9 +5,13 @@ package _01_variables
  */
 fun main(args: Array<String>) {
 
-  val a: Int = 42  // final int a
+  // (1) Immutable reference
+  // Note: final int a
+  val a: Int = 42
 //  a = 17
 
-  var b: Int = 42  // int b
+  // (2) Mutable reference
+  // Note: int b
+  var b: Int = 42
   b = 17
 }

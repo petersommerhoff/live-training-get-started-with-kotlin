@@ -5,12 +5,12 @@ package _02_types
  */
 fun main(args: Array<String>) {
 
-  // 1) Read-only sets
-  val students = setOf("Susan", "Marc", "Katrina")  // No order => No index-based access
+  // (1) Read-only sets
+  val students = setOf("Susan", "Marc", "Katrina")  // Note: no order => no index-based access
 //  students.add()
   println(students)
 
-  // 2) Mutable sets
+  // (2) Mutable sets
   val cuisines = mutableSetOf("Chinese", "Italian", "Mexican")
   println(cuisines)
 
