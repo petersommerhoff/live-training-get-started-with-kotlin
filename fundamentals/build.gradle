@@ -21,6 +21,9 @@ repositories {
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
     compile "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5"
+
+    testImplementation "org.junit.jupiter:junit-jupiter-api:5.0.0"
+    testImplementation "org.junit.jupiter:junit-jupiter-engine:5.0.0"
 }
 
 compileKotlin {
